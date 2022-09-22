@@ -1,6 +1,6 @@
 var noon = 12;
 var evening = 18; // 6PM
-var wakeupTime = 9; // 9AM
+var wakeUpTime = 9; // 9AM
 var lunchTime = 12; // 12PM
 var partyTime = 17; // 5PM
 var napTime = lunchTime + 2; // 2PM
@@ -22,7 +22,7 @@ if (time == partyTime){
 } else if (time == lunchTime) {
     messageText = "IZ NOM NOM NOM TIME!!";
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/lunchTime.jpg";
-} else if (time == wakeupTime) {
+} else if (time == wakeUpTime) {
     messageText = "IZ TIME TO GETTUP.";
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/wakeUpTime.jpg";
 } else if (time < noon) {
@@ -84,7 +84,7 @@ var isPartyTime = false;
 var partyEvent = function() {
 	
 	if (isPartyTime === false) {
-		isPartyTIme = true;
+		isPartyTime = true;
 		time = partyTime;
 		partyTimeButton.innertext = "PARTY TIME!";
 		partyTimeButton.style.backgroundColor = "#222";
